@@ -19,6 +19,7 @@ export default function UserPage() {
   const data = error ? usersData : apiData;
 
   const { query, setQuery, filteredList } = useSearch<User>(data || [], "name");
+
   const {
     currentPage,
     totalPages,
